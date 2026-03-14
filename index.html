@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Soroj Molla — CSE Student" />
+  <meta name="keywords" content="Soroj, Soroj Molla, CSE, Student, Portfolio, Daffodil Soroj, Soroj Youtuber, Soroj Molla Youtube" />
+  <meta name="author" content="Soroj Molla"/>
+  <title>Soroj Molla — Portfolio</title>
+  <link rel="shortcut icon" href="./assets/programmer.png" type="image/x-icon">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Icons (Font Awesome) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Soft background decorations -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <!-- Optional light particles (canvas) -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <nav class="navbar glass" aria-label="Primary Navigation">
+      <a class="brand" href="#home">
+  <div class="logo">
+    <div class="box">SM</div>
+    <div class="text">
+      <span class="first">Soroj</span>
+      <span class="second">Molla</span>
+    </div>
+  </div>
+</a>
+
+      <!-- Desktop menu -->
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link" href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+        <li><a class="nav-link" href="#about"><i class="fa-solid fa-user"></i><span>About Me</span></a></li>
+        <li><a class="nav-link" href="#skills"><i class="fa-solid fa-bolt"></i><span>My Skills</span></a></li>
+        <li><a class="nav-link" href="#projects"><i class="fa-solid fa-folder-open"></i><span> My Projects</span></a></li>
+        <li><a class="nav-link" href="#achievements"><i class="fa-duotone fa-solid fa-award"></i></i><span>Achievements</span></a></li>
+        <li><a class="nav-link" href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact Me</span></a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <i class="fa-sharp fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile slide-in menu -->
+    <aside class="mobile-menu glass" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-top">
+        <div class="logo">
+    <div class="box">SM</div>
+    <div class="text">
+      <span class="first">Soroj</span>
+      <span class="second">Molla</span>
+    </div>
+  </div>
+
+        <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-links">
+        <li><a class="mobile-link" href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+        <li><a class="mobile-link" href="#about"><i class="fa-solid fa-user"></i><span>About Me</span></a></li>
+        <li><a class="mobile-link" href="#skills"><i class="fa-solid fa-bolt"></i><span>My Skills</span></a></li>
+        <li><a class="mobile-link" href="#projects"><i class="fa-solid fa-folder-open"></i><span>My Projects</span></a></li>
+        <li><a class="mobile-link" href="#achievements"><i class="fa-duotone fa-solid fa-award"></i></i><span>Achievements</span></a></li>
+        <li><a class="mobile-link" href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact Me</span></a></li>
+      </ul>
+    </aside>
+
+    <!-- Backdrop for mobile menu -->
+    <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="section hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-left reveal">
+          <div class="profile-cutout">
+  <img class="profile-img floating" src="./assets/Soroj.png" alt="Soroj Molla" loading="lazy" />
+
+  <!-- ground shadow -->
+  <div class="ground-shadow"></div>
+</div>
+
+          <div class="hero-badges">
+            <span class="pill glass"><i class="fa-solid fa-graduation-cap"></i> CSE Student</span>
+            <span class="pill glass"><i class="fa-solid fa-video"></i> Content Creator</span>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <p class="kicker">Hi, I’m</p>
+          <h1 class="title">Soroj Molla</h1>
+          <p class="subtitle">B.Sc. in CSE (In Progress) - <strong>Daffodil International University</strong></p>
+
+          <p class="intro">
+            I love building clean, modern interfaces and learning core computer science concepts.
+            I’m focused on problem solving, presentation, and growing my web development skills.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="mailto:sorojmollaofficial@gmail.com">
+              <i class="fa-solid fa-crown"></i>
+              Hire me!
+            </a>
+            <a class="btn ghost" href="#projects">
+              <i class="fa-solid fa-folder-open"></i>
+              View Projects
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat glass">
+              <span class="stat-num">8+</span>
+              <span class="stat-label">Core Skills</span>
+            </div>
+            <div class="stat glass">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Software Skills</span>
+            </div>
+            <div class="stat glass">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Completed Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">A quick introduction about me and what I’m working toward.</p>
+        </div>
+
+        <div class="glass card about-card reveal">
+          <div class="about-text">
+            <p>
+              I’m <strong>Soroj Molla</strong>, a CSE student of <strong>Daffodil International University,</strong>
+              with a strong interest in programming, web development, and building practical technology solutions. 
+            </p>
+            <p>
+              I enjoy <strong>problem solving</strong> and building confidence through <strong>presentation skills</strong>.
+              My goal is to become a strong developer by mastering core concepts and shipping real projects.
+            </p>
+            <p>
+              I’m currently learning <strong>Web Development</strong> and exploring ways to create elegant user experiences
+              with clean code and modern UI design.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="mini glass">
+              <i class="fa-duotone fa-solid fa-graduation-cap"></i>
+              <div>
+                <h3>Currently Studying</h3>
+                <p>B.Sc. in CSE, Daffodil International University</p>
+              </div>
+            </div>
+
+            <div class="mini glass">
+              <i class="fa-solid fa-brain"></i>
+              <div>
+                <h3>Problem Solving</h3>
+                <p>Step-by-step thinking & practice</p>
+              </div>
+            </div>
+
+            <div class="mini glass">
+              <i class="fa-solid fa-microphone"></i>
+              <div>
+                <h3>Communication</h3>
+                <p>Clear explanations & presentations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-desc">Core strengths and what I’m improving right now.</p>
+        </div>
+
+        <div class="grid skills-grid">
+          <!-- Skill Card -->
+
+                    <article class="glass card skill-card reveal">
+            <div class="skill-top">
+              <div class="icon-bubble">
+                <i class="fa-sharp fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="skill-meta">
+                <h3>C Programming</h3>
+                <p class="muted">Learning C Programming Language & Solving Problems</p>
+              </div>
+              <span class="skill-percent">70%</span>
+            </div>
+
+            <div class="progress">
+              <div class="bar" data-progress="70"></div>
+            </div>
+          </article>
+
+          <article class="glass card skill-card reveal">
+            <div class="skill-top">
+              <div class="icon-bubble">
+                <i class="fa-solid fa-puzzle-piece"></i>
+              </div>
+              <div class="skill-meta">
+                <h3>Problem Solving</h3>
+                <p class="muted">Building Logical Thinking and Analytical Skills</p>
+              </div>
+              <span class="skill-percent">70%</span>
+            </div>
+
+            <div class="progress">
+              <div class="bar" data-progress="70"></div>
+            </div>
+          </article>
+
+          <article class="glass card skill-card reveal">
+            <div class="skill-top">
+              <div class="icon-bubble">
+                <i class="fa-regular fa-file-code"></i>
+              </div>
+              <div class="skill-meta">
+                <h3>HTML / CSS</h3>
+                <p class="muted">Learning Modern Web Development</p>
+              </div>
+              <span class="skill-percent">60%</span>
+            </div>
+
+            <div class="progress">
+              <div class="bar" data-progress="60"></div>
+            </div>
+          </article>
+
+          <article class="glass card skill-card reveal">
+            <div class="skill-top">
+              <div class="icon-bubble">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div class="skill-meta">
+                <h3>AI & Productivity Tools</h3>
+                <p class="muted">ChatGPT, Gemeni, AI-assisted Research and Writing</p>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+
+            <div class="progress">
+              <div class="bar" data-progress="80"></div>
+            </div>
+          </article> 
+
+
+          <article class="glass card skill-card reveal">
+            <div class="skill-top">
+              <div class="icon-bubble">
+                <i class="fa-brands fa-cpanel"></i>
+              </div>
+              <div class="skill-meta">
+                <h3>Web & Dashboard Management</h3>
+                <p class="muted">Understanding Admin Panels, Website Dashboards</p>
+              </div>
+              <span class="skill-percent">70%</span>
+            </div>
+
+            <div class="progress">
+              <div class="bar" data-progress="70"></div>
+            </div>
+          </article>
+
+          <article class="glass card skill-card reveal">
+            <div class="skill-top">
+              <div class="icon-bubble">
+                <i class="fa-solid fa-bezier-curve"></i>
+              </div>
+              <div class="skill-meta">
+                <h3>Graphics Design & Video Editing</h3>
+                <p class="muted">Photoshop, Premiere Pro, After Effects, Filmora, Capcut</p>
+              </div>
+              <span class="skill-percent">75%</span>
+            </div>
+
+            <div class="progress">
+              <div class="bar" data-progress="75"></div>
+            </div>
+          </article>
+
+
+          <article class="glass card skill-card reveal">
+            <div class="skill-top">
+              <div class="icon-bubble">
+                <i class="fa-solid fa-file-powerpoint"></i>
+              </div>
+              <div class="skill-meta">
+                <h3>Microsoft Office Suite</h3>
+                <p class="muted">Microsoft Word, Microsoft PowerPoint, Microsoft Excel</p>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+
+            <div class="progress">
+              <div class="bar" data-progress="85"></div>
+            </div>
+          </article>
+          
+          <article class="glass card skill-card reveal">
+            <div class="skill-top">
+              <div class="icon-bubble">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+              <div class="skill-meta">
+                <h3>Google Workspace</h3>
+                <p class="muted">Google Docs, Google Sheets, Google Slides, Google Meet</p>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+
+            <div class="progress">
+              <div class="bar" data-progress="85"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-desc">Click a project to view full details.</p>
+        </div>
+
+        <div class="grid projects-grid">
+          <!-- Project Card (data attributes power the modal) -->
+          <article class="glass card project-card reveal"
+            data-title="Science Club Zone- Website"
+            data-desc="A teenager science community to share the knowledge of science"
+            data-full="At Science Club Zone, we are building a community of curious minds dedicated to exploring the wonders of science through hands-on experiments, insightful discussions, and practical applications. Our mission is to foster curiosity, creativity, and innovation."
+            data-tech="HTML, CSS, JavaScript, Blogger, Domain"
+            data-demo="https://www.scienceclubzone.xyz/"
+            data-github="https://www.scienceclubzone.xyz/"
+            data-image="https://iili.io/qncStBS.md.png&w=1888&auto=format&fit=crop"
+          >
+            <div class="project-thumb">
+              <img
+                src="https://iili.io/qncStBS.md.png&w=1888&auto=format&fit=crop"
+                alt="Project thumbnail"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <h3>Science Club Zone- Website</h3>
+              <p class="muted">A teenager science community to share the knowledge of science</p>
+              <span class="chip"><i class="fa-solid fa-arrow-pointer"></i> Click for details</span>
+            </div>
+          </article>
+
+          <article class="glass card project-card reveal"
+            data-title="Soroj Molla- Youtube Channel"
+            data-desc="Creating contents related to science, tech and tutorial"
+            data-full="I make video content for students and teenagers based on science and technology. "
+            data-tech="Adobe Premire Pro, Filmora, Adobe Adution, Adobe Photoshop, Video Recording"
+            data-demo="https://www.youtube.com/@SorojMolla"
+            data-image="https://iili.io/qncuRqu.md.png&w=1919&auto=format&fit=crop"
+          >
+            <div class="project-thumb">
+              <img
+                src="https://iili.io/qncuRqu.md.png&w=1919&auto=format&fit=crop"
+                alt="Project thumbnail"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <h3>Soroj Molla- Youtube Channel</h3>
+              <p class="muted">Creating contents related to science, tech & tutorial</p>
+              <span class="chip"><i class="fa-solid fa-arrow-pointer"></i> Click for details</span>
+            </div>
+          </article>
+
+          <article class="glass card project-card reveal"
+            data-title="Developing a Tech Community"
+            data-desc="Coming Soon"
+            data-full="Coming Soon"
+            data-tech="Digital Services"
+            data-demo="#home"
+            data-github="#"
+            data-image="https://iili.io/qn09nDl.th.png&w=1920&auto=format&fit=crop"
+          >
+          
+            <div class="project-thumb">
+              <img
+                src="https://iili.io/qn09nDl.th.png&w=1920&auto=format&fit=crop"
+                alt="Project thumbnail"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <h3>Developing a Tech Community</h3>
+              <p class="muted">Coming soon...</p>
+              <span class="chip"><i class="fa-solid fa-arrow-pointer"></i> Click for details</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"></div>
+
+  <dialog class="modal glass" id="projectModal" aria-labelledby="modalTitle" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="Close project details">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="modal-media">
+      <img id="modalImage" src="" alt="Project preview" />
+    </div>
+
+    <div class="modal-content">
+      <h3 id="modalTitle"></h3>
+      <p class="muted" id="modalDesc"></p>
+
+      <div class="modal-block">
+        <h4>Details</h4>
+        <p id="modalFull"></p>
+      </div>
+
+      <div class="modal-block">
+        <h4>Technologies</h4>
+        <p class="muted" id="modalTech"></p>
+      </div>
+
+      <div class="modal-actions">
+        <a class="btn primary" id="modalDemo" href="#" target="_blank" rel="noreferrer">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          Live Demo
+        </a>
+        <a class="btn ghost" id="modalGithub" href="#" target="_blank" rel="noreferrer">
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+    <!-- Achievement / Certificates -->
+<section class="section" id="achievements">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2 class="section-title">Achievements</h2>
+      <p class="section-desc">Some certificates and recognitions from my learning journey.</p>
+    </div>
+
+    <div class="achievement-slider reveal">
+      <button class="achievement-arrow achievement-arrow-left is-hidden" aria-label="Scroll left">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="achievement-marquee" id="achievementMarquee">
+        <div class="achievement-track" id="achievementTrack">
+
+          <article class="achievement-card">
+            <div class="achievement-image-wrap">
+              <img src="./assets/certificate20260314180308_pages-to-jpg-0001.jpg" alt="Digital Security Essentials">
+            </div>
+            <div class="achievement-content">
+              <h3>Digital Security Essentials</h3>
+              <p class="muted">Issued by: National Cyber Security Agency</p>
+              <p class="muted">Platform: muktopaath.gov.bd</p>
+              <p class="muted">Completed: 16 April, 2020</p>
+            </div>
+          </article>
+
+          <article class="achievement-card">
+            <div class="achievement-image-wrap">
+              <img src="./assets/certificate20260314180337_pages-to-jpg-0001.jpg" alt="Microsoft Word Basics">
+            </div>
+            <div class="achievement-content">
+              <h3>Microsoft Word Basics</h3>
+              <p class="muted">Issued by: 10 Minute School</p>
+              <p class="muted">Platform: muktopaath.gov.bd</p>
+              <p class="muted">Completed: 20 April, 2020</p>
+            </div>
+          </article>
+
+          <article class="achievement-card">
+            <div class="achievement-image-wrap">
+              <img src="./assets/certificate20260314180328_page-0001.jpg" alt="Microsoft Excel Basics">
+            </div>
+            <div class="achievement-content">
+              <h3>Microsoft Excel Basics</h3>
+              <p class="muted">Issued by: 10 Minute School</p>
+              <p class="muted">Platform: muktopaath.gov.bd</p>
+              <p class="muted">Completed: 16 April, 2020</p>
+            </div>
+          </article>
+
+          <article class="achievement-card">
+            <div class="achievement-image-wrap">
+              <img src="./assets/certificate20260314180300_page-0001.jpg" alt="Photography Basics">
+            </div>
+            <div class="achievement-content">
+              <h3>Photography Basics</h3>
+              <p class="muted">Issued by: 10 Minute School</p>
+              <p class="muted">Platform: muktopaath.gov.bd</p>
+              <p class="muted">Completed: 16 April, 2020</p>
+            </div>
+          </article>
+
+          <article class="achievement-card">
+            <div class="achievement-image-wrap">
+              <img src="./assets/certificate20260314180309_page-0001.jpg" alt="Basic Graphic Design">
+            </div>
+            <div class="achievement-content">
+              <h3>Basic Graphic Design</h3>
+              <p class="muted">Issued by: Pentanik IT</p>
+              <p class="muted">Platform: muktopaath.gov.bd</p>
+              <p class="muted">Completed: 14 March, 2026</p>
+            </div>
+          </article>
+
+          <article class="achievement-card">
+            <div class="achievement-image-wrap">
+              <img src="./assets/Coursera NX9Q8L7QKVV8_page-0001.jpg" alt="Stanford Introduction to Food and Health">
+            </div>
+            <div class="achievement-content">
+              <h3>Stanford Introduction to Food and Health</h3>
+              <p class="muted">Issued by: Stanford University</p>
+              <p class="muted">Platform: Coursera</p>
+              <p class="muted">Completed: 18 August, 2021</p>
+            </div>
+          </article>
+
+          <article class="achievement-card">
+            <div class="achievement-image-wrap">
+              <img src="./assets/Coursera B3J2ZED7L7LR_page-0001.jpg" alt="COVID-19 Contact Tracing">
+            </div>
+            <div class="achievement-content">
+              <h3>COVID-19 Contact Tracing</h3>
+              <p class="muted">Issued by: Johns Hopkins University</p>
+              <p class="muted">Platform: Coursera</p>
+              <p class="muted">Completed: 5 January, 2022</p>
+            </div>
+          </article>
+
+          <article class="achievement-card">
+            <div class="achievement-image-wrap">
+              <img src="./assets/Coursera VDS6NFVMPCRX_page-0001.jpg" alt="Introductory Human Physiology">
+            </div>
+            <div class="achievement-content">
+              <h3>Introductory Human Physiology</h3>
+              <p class="muted">Issued by: Duke University</p>
+              <p class="muted">Platform: Coursera</p>
+              <p class="muted">Completed: 1 May, 2024</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <button class="achievement-arrow achievement-arrow-right" aria-label="Scroll right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-desc">Send a message or connect with me on social platforms.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form
+            class="glass card contact-card contact-form reveal"
+            id="contactForm"
+            action="https://formspree.io/f/mdawnyrb"
+            method="POST"
+          >
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="your@email.com" autocomplete="email" required />
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button class="btn primary full" type="submit">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+
+            <p class="form-note muted" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="glass card contact-card contact-side reveal" aria-label="Social links and contact details">
+            <div class="contact-side-head">
+              <h3 class="contact-title">Find me online</h3>
+              <p class="muted">Stay connected with me ✨</p>
+            </div>
+
+            <div class="contact-visual" aria-hidden="true">
+              <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.3/dist/dotlottie-wc.js" type="module"></script>
+              <dotlottie-wc src="https://lottie.host/613afcbc-dbd4-4a76-80b4-ad1ba734de30/xCVWRj7K2Y.lottie" autoplay loop></dotlottie-wc>
+            </div>
+
+            <ul class="social-list" aria-label="Social profiles">
+              <li>
+                <a class="social-link social-linkedin" href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                  <span class="social-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                  <span class="social-meta">
+                    <strong>LinkedIn</strong>
+                    <small>Professional profile</small>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="social-link social-github" href="https://www.github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+                  <span class="social-icon"><i class="fa-brands fa-github"></i></span>
+                  <span class="social-meta">
+                    <strong>GitHub</strong>
+                    <small>Code and projects</small>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="social-link social-instagram" href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                  <span class="social-icon"><i class="fa-brands fa-instagram"></i></span>
+                  <span class="social-meta">
+                    <strong>Instagram</strong>
+                    <small>Visual updates</small>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="social-link social-youtube" href="https://youtube.com/" target="_blank" rel="noreferrer" aria-label="Youtube">
+                  <span class="social-icon"><i class="fa-brands fa-youtube"></i></span>
+                  <span class="social-meta">
+                    <strong>YouTube</strong>
+                    <small>Video content</small>
+                  </span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="contact-extra">
+              <div class="mini glass">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p class="muted">Dhaka,Bangladesh</p>
+                </div>
+              </div>
+
+              <div class="mini glass">
+                <i class="fa-solid fa-bolt"></i>
+                <div>
+                  <h4>Status</h4>
+                  <p class="muted">Open to learning & collaboration</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+ </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year">2026</span> Soroj Molla. All rights reserved.</p>
+
+<button id="scrollTopBtn" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
